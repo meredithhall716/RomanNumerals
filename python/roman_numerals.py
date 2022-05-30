@@ -23,7 +23,6 @@ def to_roman(num):
 }
 
     for key in roman_dict.keys():
-        # while num >= 1:
             answer += (math.floor(num/roman_dict[key]))*key
             num %= roman_dict[key]
             
